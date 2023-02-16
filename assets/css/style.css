@@ -330,12 +330,19 @@ input[type=submit] {
 
     header div{
         display: block; 
-        padding: 1vh;
     }
 
     .welcome_sec h1{
         font-size: 7rem;
     }
+
+    .room {
+        width:400px;
+    }
+    .img_container div{
+        padding: 2.5vw;
+    }
+    
 
     footer{
         display: block;
@@ -347,6 +354,7 @@ input[type=submit] {
     footer nav ul{ 
         display: flex; 
         justify-content: center;
+        align-items: center;
     }
 
     footer nav ul li {
