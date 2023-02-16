@@ -1,0 +1,367 @@
+/* ==== GENERALS==== 
+#DFAA5B #957554
+*/
+
+@font-face {
+    font-family: 'Ubunto-Medium';
+    src: url('../fonts/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Ubunto-Regular';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ubunto-Light';
+    src: url('../fonts/Ubuntu-Light.ttf');
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+h2{
+    font-size: 4rem;
+    font-family: 'Ubunto-Medium';
+    color: #957554;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+/* ==== HEADER ==== */
+
+header{
+    padding: 5vh 0 1vh 0;
+    display: block;
+    text-align: center;
+    font-family: 'Ubunto-Regular';
+}
+
+.img {
+    width:100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 5vw; 
+    white-space: nowrap; 
+}
+
+header nav a{
+    font-size: 2rem;
+    color: #957554;
+    text-decoration: none;
+    margin: 0 3.2vw; 
+    position: relative;
+}
+
+header nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #957554;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+
+header nav a:hover:after{
+    width: 100%;
+}
+
+header div span {
+    display: block;
+    height: 5px;
+    width: 55px;
+    background-color: #957554;
+    margin: 8px 0;
+    border-radius: 2px;
+}
+
+header div{
+    display: none;
+}
+
+/* ==== SEC ONE IMAGE ==== */
+
+.welcome_sec{
+    background-image: url('../img/hero_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome_sec article{
+    padding-top: 40vh;
+}
+
+.welcome_sec h1{
+    color: #fff;
+    font-family: 'Ubunto-Regular';
+    font-size: 9rem;
+    margin-bottom: 2vh;
+    display: flex;
+    align-self: center;
+}
+
+.welcome_sec p{
+    color: #fff;
+    font-family: 'Ubunto-Regular';
+    font-size: 2.4rem;
+    margin-bottom: 8vh;
+}
+
+.big_button{
+    color: white;
+    background-color: #DFAA5B;
+    text-decoration: none;
+    font-family: 'Ubunto-Regular';
+    font-size: 2.4rem;
+    padding: 20px 100px 20px 100px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 30vh;
+}
+
+.big_button:hover{
+    background-color:  #b48847;
+    }
+
+/* ==== SEC Facilities ==== */
+
+.facilities{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 10vh 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img_container{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.img_container div{
+    padding: 4vw;
+}
+
+figcaption{
+    font-family: 'Ubunto-Light';
+    font-size: 2rem;
+    padding-top: 1vh;
+    color: #957554;
+}
+
+/* ==== SEC ROOMS ==== */
+
+h3{
+    padding-top: 30%;
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Ubunto-Regular';
+}
+
+.roomsrates h2{
+    margin-bottom: 3vh;
+}
+
+.roomsrates{
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+.room {
+    background-color: #DFAA5B;
+    width: 560px;
+    padding: 25vh 0 9vh 0;  
+    text-align: center; 
+    border-radius: 5px;
+}
+
+.container_img{
+    margin-top: 50px;
+    margin-bottom: 20vh; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px; 
+}
+
+.room:nth-of-type(1){
+    background-image: url('../img/standard_twin_room.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.room:nth-of-type(2){
+    background-image: url('../img/standard_room.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.room:nth-of-type(3){
+    background-image: url('../img/standard_view_room.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.room:nth-of-type(4){
+    background-image: url('../img/deluxe_room.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.room a{
+    margin-top: 20px;
+    color: white;
+    background-color: #DFAA5B;
+    text-decoration: none;
+    font-family: 'Ubunto-Regular';
+    font-size: 2.4rem;
+    padding: 20px 50px; 
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.room a:hover{
+    background-color:  #b48847;
+}
+
+/* ==== FOOTER ==== */
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+    color: #fff;
+    font-family: 'Ubunto-Regular';
+}
+
+form{
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p{
+    font-size: 1.5rem;
+}
+
+footer nav ul{
+    font-size: 1.5rem;
+    list-style:none;
+}
+
+footer nav ul li{
+    margin-bottom: 20px;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer nav ul li a:hover{
+    text-decoration: underline;
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    font-family: 'Ubunto-Medium';
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #DFAA5B;
+    font-family: 'Ubunto-Regular';
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 5px;
+    outline-style: none;
+}
+
+@media only screen and (max-width:600px) {
+    
+    header{
+        display: flex;
+        padding: 5vh 0 5vh 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 50vw;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header div{
+        display: block; 
+        padding: 1vh;
+    }
+
+    .welcome_sec h1{
+        font-size: 7rem;
+    }
+
+    footer{
+        display: block;
+        padding: 0;
+        margin:0;
+        text-align: center;
+    }
+
+    footer nav ul{ 
+        display: flex; 
+        justify-content: center;
+    }
+
+    footer nav ul li {
+        display: flex;
+        padding: 10px;
+        margin: 40px 0;
+    }
+
+    .right_con{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    form{
+        width: 80%;
+        padding:10px;
+    }
+}
